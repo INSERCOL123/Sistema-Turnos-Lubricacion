@@ -2,13 +2,16 @@ import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_API_KEY,
-  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_APP_ID
+  apiKey: "AIzaSyD_M0TkSeJc_MUleIBK1b2Y9dq1puf-8Ww",
+  authDomain: "turnos-lubricacion-6998a.firebaseapp.com",
+  projectId: "turnos-lubricacion-6998a",
+  storageBucket: "turnos-lubricacion-6998a.firebasestorage.app",
+  messagingSenderId: "21521100171",
+  appId: "1:21521100171:web:b84b49500bc9c3ed81138e"
 };
 
+
 const app = initializeApp(firebaseConfig);
-export const db = getFirestore(app);
+const db = getFirestore(app);
+
+export { db };
